@@ -1,0 +1,5 @@
+## randoms
+random_tuning: 6
+
+## tabular predictor
+eval_metric: f1_macro

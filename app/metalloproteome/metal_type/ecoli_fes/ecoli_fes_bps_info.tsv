@@ -1,0 +1,145 @@
+gene	uniprot	function	sites_resi_seq_num
+fdx	P0A9R4	Ferredoxins/Ferredoxin-like Subunits	C42-C48-C51-C87
+fixX	P68646	Ferredoxins/Ferredoxin-like Subunits	
+ydiT	P77714	Ferredoxins/Ferredoxin-like Subunits	
+ygcO	Q46905	Ferredoxins/Ferredoxin-like Subunits	
+yjdI	P0AF59	Ferredoxins/Ferredoxin-like Subunits	
+yfaE	P0ABW3	Ferredoxins/Ferredoxin-like Subunits	C37-C42-C45-C74
+yfhL	P52102	Ferredoxins/Ferredoxin-like Subunits	C9-C12-C15-C54,C19-C38-C41-C50
+xdhC	Q46801	Ferredoxins/Ferredoxin-like Subunits	C44-C49-C52
+paoA	P77165	Ferredoxins/Ferredoxin-like Subunits	C99-C104-C105-C107,C158-C161-C208-C210
+paoB	P77324	Ferredoxins/Ferredoxin-like Subunits	C119-C129-C138-C157
+narG	P09152	Ferredoxins/Ferredoxin-like Subunits	C50-C54-C58-C93
+narZ	P19319	Ferredoxins/Ferredoxin-like Subunits	C50-C54-C58-C93
+dmsA	P18775	Ferredoxins/Ferredoxin-like Subunits	C63-C67-C71-C104
+ynfE	P77374	Ferredoxins/Ferredoxin-like Subunits	C56-C60-C64-C96
+ynfF	P77783	Ferredoxins/Ferredoxin-like Subunits	C59-C63-C67-C99
+napA	P33937	Ferredoxins/Ferredoxin-like Subunits	C46-C49-C53-C81
+fdoG	P32176	Ferredoxins/Ferredoxin-like Subunits	C50-C53-C57-C92
+fdnG	P24183	Ferredoxins/Ferredoxin-like Subunits	C50-C53-C57-C92
+fdhF	P07658	Ferredoxins/Ferredoxin-like Subunits	C8-C11-C15-C42
+ydeP	P77561	Ferredoxins/Ferredoxin-like Subunits	C49-C52
+ydhV	P76192	Ferredoxins/Ferredoxin-like Subunits	C307-C310-C314-C558
+nuoG	P33602	Ferredoxins/Ferredoxin-like Subunits	C34-C45-C48-C67,H99-C103-C106-C112,C151-C154-C157-C201,C228-C231-C235-C263
+hyaA	P69739	Ferredoxins/Ferredoxin-like Subunits	C62-C65-C160-C194,H232-C235-C260-C266,C275-C294-C297
+hybO	P69741	Ferredoxins/Ferredoxin-like Subunits	C59-C62-C157-C191,H229-C232-C257-C263,C272-C292-C295
+nuoB	P0AFC7	Ferredoxins/Ferredoxin-like Subunits	C63-C64-C129-C158
+hyfI	P77668	Ferredoxins/Ferredoxin-like Subunits	C41-C47-C111-C141
+hycG	P16433	Ferredoxins/Ferredoxin-like Subunits	C45-C51-C115-C145
+narH	P11349	Ferredoxins/Ferredoxin-like Subunits	C16-C19-C22-C263,C26-C244-C247-C259,C184-C187-C192-C227,C196-C217-C227
+narY	P19318	Ferredoxins/Ferredoxin-like Subunits	C16-C19-C22-C262,C26-C243-C246-C258,C183-C186-C191-C226,C195-C216-C226
+dmsB	P18776	Ferredoxins/Ferredoxin-like Subunits	C14-C17-C20-C145,C24-C126-C129-C141,C67-C70-C75-C109,C79-C99-C102-C105
+ynfG	P0AAJ1	Ferredoxins/Ferredoxin-like Subunits	C14-C17-C20-C145,C24-C126-C129-C141,C67-C70-C75-C109,C79-C99-C102-C105
+ydhX	P77375	Ferredoxins/Ferredoxin-like Subunits	C46-C49-C52-C171,C56-C151-C154-C167,C92-C95-C100-C134,C104-C124-C127-C130
+ydhY	P0AAL6	Ferredoxins/Ferredoxin-like Subunits	C68-C71-C74-C193,C78-C183-C186-C189,C123-C126-C131-C166,C135-C156-C159-C162
+ygfS	Q46819	Ferredoxins/Ferredoxin-like Subunits	C12-C15-C18-C133,C22-C117-C120-C129,C55-C58-C63-C96,C67-C86-C89-C92
+fdoH	P0AAJ5	Ferredoxins/Ferredoxin-like Subunits	C39-C42-C45-C179,C49-C160-C163-C175,C100-C103-C108-C143,C112-C133-C136-C139
+fdnH	P0AAJ3	Ferredoxins/Ferredoxin-like Subunits	C39-C42-C45-C179,C49-C160-C163-C175,C100-C103-C108-C143,C112-C133-C136-C139
+nrfC	P0AAK7	Ferredoxins/Ferredoxin-like Subunits	C46-C49-C52-C172,C56-C152-C155-C168,C92-C95-C100-C135,C104-C125-C128-C131
+hybA	P0AAJ8	Ferredoxins/Ferredoxin-like Subunits	C47-C50-C53-C197,C57-C174-C177-C193,C112-C115-C120-C155,C124-C145-C148-C151
+hyfA	P23481	Ferredoxins/Ferredoxin-like Subunits	C12-C15-C18-C162,C22-C146-C149-C158,C51-C54-C59-C92,C63-C82-C85-C88
+hycB	P0AAK1	Ferredoxins/Ferredoxin-like Subunits	C12-C15-C18-C159,C22-C143-C146-C155,C51-C54-C59-C92,C63-C82-C85-C88
+hydN	P0AAK4	Ferredoxins/Ferredoxin-like Subunits	C12-C15-C18-C147,C22-C131-C134-C143,C58-C61-C66-C99,C70-C89-C92-C95
+ysaA	P56256	Ferredoxins/Ferredoxin-like Subunits	C12-C15-C18-C134,C22-C118-C121-C130,C58-C61-C66-C99,C70-C89-C92-C95
+ygfT	Q46820	Ferredoxins/Ferredoxin-like Subunits	C12-C15-C18-C129,C22-C112-C115-C125,C56-C59-C64-C97,C68-C87-C90-C93,C210-C213-C219-C223,C258-C262-C268-C272
+aegA	P37127	Ferredoxins/Ferredoxin-like Subunits	C12-C15-C18-C137,C22-C121-C124-C133,C56-C59-C64-C97,C68-C87-C90-C93
+gltD	P09832	Ferredoxins/Ferredoxin-like Subunits	C47-C50-C55-C59
+preT	P76440	Ferredoxins/Ferredoxin-like Subunits	
+ygfK	Q46811	Ferredoxins/Ferredoxin-like Subunits	C938-C941-C944-C948
+fadH	P42593	Ferredoxins/Ferredoxin-like Subunits	C335-C338-C342-C354
+napF	P0AAL0	Ferredoxins/Ferredoxin-like Subunits	C37-C40-C43-C47,C69-C72-C75-C79,C141-C144-C147-C151
+napG	P0AAL3	Ferredoxins/Ferredoxin-like Subunits	C61-C64-C67-C71,C99-C102-C107-C111,C139-C147-C150-C154,C186-C189-C192-C196
+napH	P33934	Ferredoxins/Ferredoxin-like Subunits	C226-C229-C232-C236,C260-C263-C266-C270
+yccM	P52636	Ferredoxins/Ferredoxin-like Subunits	C251-C254-C257-C288,C261-C278-C281-C284
+rsxB	P77223	Ferredoxins/Ferredoxin-like Subunits	C49-C52-C57-C74,C117-C120-C123-C157,C127-C147-C150-C153
+rsxC	P77611	Ferredoxins/Ferredoxin-like Subunits	C377-C380-C383-C426,C387-C416-C419-C422
+nuoI	P0AFD6	Ferredoxins/Ferredoxin-like Subunits	C60-C63-C66-C109,C70-C99-C102-C105
+hyfH	P77423	Ferredoxins/Ferredoxin-like Subunits	C40-C43-C50,C75-C78-C81-C85
+hycF	P16432	Ferredoxins/Ferredoxin-like Subunits	C40-C43-C50,C75-C78-C81-C85
+ykgF	P77536	Ferredoxins/Ferredoxin-like Subunits	C312-C315-C318-C372,C322-C362-C365-C368
+ydiJ	P77748	Ferredoxins/Ferredoxin-like Subunits	
+glpC	P0A996	Ferredoxins/Ferredoxin-like Subunits	C9-C12-C15-C66,C19-C56-C59-C62
+glcF	P52074	Ferredoxins/Ferredoxin-like Subunits	C25-C28-C31-C85,C35-C75-C78-C81
+ydjY	P76220	Ferredoxins/Ferredoxin-like Subunits	
+preA	P25889	Ferredoxins/Ferredoxin-like Subunits	C344-C347-C350-C388,C354-C378-C381-C384
+ydbK	P52647	Ferredoxins/Ferredoxin-like Subunits	C689-C692-C695-C755,C699-C745-C748-C751,C819-C822-C847-C1071
+queG	P39288	Ferredoxins/Ferredoxin-like Subunits	C193-C196-C199-C253,C203-C246-C249
+sdhB	P07014	Ferredoxins/Ferredoxin-like Subunits	C55-C60-C75,C159-C206-C212,C149-C152-C155-C216
+frdB	P0AC47	Ferredoxins/Ferredoxin-like Subunits	C58-C63-C66-C78,C159-C205-C211,C149-C152-C155-C215
+gltB	P09831	Ferredoxins/Ferredoxin-like Subunits	C1102-C1108-C1113
+nuoE	P0AFD1	Ferredoxins/Ferredoxin-like Subunits	C92-C97-C133-C137
+nuoF	P31979	Ferredoxins/Ferredoxin-like Subunits	C351-C354-C357-C398
+cntA	P0ABR7	Ferredoxins/Ferredoxin-like Subunits	C89-H91-C109-H112
+hcaE	P0ABR5	Ferredoxins/Ferredoxin-like Subunits	C85-H87-C105-H108
+cntB	P76254	Ferredoxins/Ferredoxin-like Subunits	C270-C275-C278-C308
+paaE	P76081	Ferredoxins/Ferredoxin-like Subunits	C299-C304-C307-C337
+hcr	P75824	Ferredoxins/Ferredoxin-like Subunits	C273-C278-C281-C311
+ycbX	P75863	Ferredoxins/Ferredoxin-like Subunits	
+hcaC	P0ABW0	Ferredoxins/Ferredoxin-like Subunits	
+fdhE	P13024	Ferredoxins/Ferredoxin-like Subunits	
+bioB	P12996	Radical-SAM Enzymes	C53-C57-C60,C97-C128-C188
+lipA	P60716	Radical-SAM Enzymes	C94-C98-C101,C68-C73-C79
+moaA	P30745	Radical-SAM Enzymes	C24-C28-C31,C257-C260-C274
+thiC	P30136	Radical-SAM Enzymes	C581-C584-C589
+thiH	P30140	Radical-SAM Enzymes	C85-C89-C92
+hemN	P32131	Radical-SAM Enzymes	C62-C66-C69
+hemW	P52062	Radical-SAM Enzymes	C16-C20-C23
+miaB	P0AEI1	Radical-SAM Enzymes	C157-C161-C164,C12-C49-C83
+rimO	P0AEI4	Radical-SAM Enzymes	C150-C154-C157,C17-C53-C82
+ygiQ	Q46861	Radical-SAM Enzymes	C386-C390-C393
+rlmN	P36979	Radical-SAM Enzymes	C125-C129-C132
+queE	P64554	Radical-SAM Enzymes	C31-C35-C38
+epmB	P39280	Radical-SAM Enzymes	C120-C124-C127
+pflA	P0A9N4	Radical-SAM Enzymes	C30-C34-C37
+pflC	P32675	Radical-SAM Enzymes	C47-C51-C54
+pflE	P75794	Radical-SAM Enzymes	C25-C29-C32
+yjjW	P39409	Radical-SAM Enzymes	C31-C35-C38,C47-C50-C53-C86,C57-C76-C79-C82
+nrdG	P0A9N8	Radical-SAM Enzymes	C26-C30-C33
+aslB	P25550	Radical-SAM Enzymes	C21-C25-C28,C276-C282-C297,C339-C342-C348-C352
+ydeM	P76134	Radical-SAM Enzymes	C12-C16-C19,C257-C263-C278,C315-C318-C324-C28
+yhcC	P0ADW6	Radical-SAM Enzymes	C33-C45-C48
+phnJ	P16688	Radical-SAM Enzymes	
+acnA	P25516	Iron-sulfur Dehydratases	C435-C501-C504
+acnB	P36683	Iron-sulfur Dehydratases	C710-C769-C772
+ybhJ	P75764	Iron-sulfur Dehydratases	C360-C421-C424
+leuC	P0A6A6	Iron-sulfur Dehydratases	C347-C407-C410
+fumA	P0AC33	Iron-sulfur Dehydratases	C105-C224-C318
+fumB	P14407	Iron-sulfur Dehydratases	C105-C224-C318
+sdaA	P16095	Iron-sulfur Dehydratases	
+sdaB	P30744	Iron-sulfur Dehydratases	
+tdcG	P42630	Iron-sulfur Dehydratases	
+ilvD	P05791	Iron-sulfur Dehydratases	C122-C195
+edd	P0ADF6	Iron-sulfur Dehydratases	C154-C221
+yjhG	P39358	Iron-sulfur Dehydratases	
+yagF	P77596	Iron-sulfur Dehydratases	
+ttdA	P05847	Iron-sulfur Dehydratases	C71-C190-C277
+dinG	P27296	DNA-binding Fe-S Proteins	C120-C194-C199-C205
+yoaA	P76257	DNA-binding Fe-S Proteins	C108-C168-C173-C179
+mutY	P17802	DNA-binding Fe-S Proteins	C192-C199-C202-C208
+nth	P0AB83	DNA-binding Fe-S Proteins	C187-C194-C197-C203
+iscR	P0AGK8	DNA-binding Fe-S Proteins	C92-C98-C104
+nsrR	P0AF63	DNA-binding Fe-S Proteins	C91-C96-C102
+soxR	P0ACS2	DNA-binding Fe-S Proteins	C119-C122-C124-C130
+yeiL	P0A9E9	DNA-binding Fe-S Proteins	C68-C91-C93-C116
+fnr	P0A9E5	DNA-binding Fe-S Proteins	C20-C23-C29-C122
+feoC	P64638	DNA-binding Fe-S Proteins	C56-C61-C64-C70
+iscU	P0ACD4	Fe-S Scaffolds	
+sufB	P77522	Fe-S Scaffolds	
+iscA	P0AAC8	Fe-S Scaffolds	C35-C99-C101
+sufA	P77667	Fe-S Scaffolds	
+erpA	P0ACC3	Fe-S Scaffolds	C42-C106-C108
+nfuA	P63020	Fe-S Scaffolds	C149-C152
+grxD	P0AC69	Fe-S Scaffolds	C30
+cysI	P17846	Miscelanneous Fe-S Proteins	C434-C440-C479-C483
+nirB	P08201	Miscelanneous Fe-S Proteins	C641-C647-C681-C685
+hcp	P75825	Miscelanneous Fe-S Proteins	C3-C6-C18-C25,C317-C405-C433-C458
+rlmC	P75817	Miscelanneous Fe-S Proteins	C3-C11-C14-C87
+rlmD	P55135	Miscelanneous Fe-S Proteins	C81-C87-C90-C162
+ttcA	P76055	Miscelanneous Fe-S Proteins	C122-C125-C213
+nadA	P11458	Miscelanneous Fe-S Proteins	
+ubiU	P45527	Miscelanneous Fe-S Proteins	C169-C176-C193-C232
+ubiV	P45475	Miscelanneous Fe-S Proteins	C39-C180-C193-C197
+ispG	P62620	Miscelanneous Fe-S Proteins	C270-C273-C305-C312
+ispH	P62623	Miscelanneous Fe-S Proteins	C12-C96-C197
+fhuF	P39405	Miscelanneous Fe-S Proteins	C244-C245-C256-C259
+bfd	P0AE56	Miscelanneous Fe-S Proteins	C4-C6-C39-C42

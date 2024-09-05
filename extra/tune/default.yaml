@@ -1,0 +1,12 @@
+# train part
+num_repeats: 3
+## cross validation
+num_folds: 5
+random_valid: [42, 142, 242]
+randoms_tuning: [ # row for repeat, column for fold 
+  [1, 4, 9, 16, 25],
+  [101, 104, 109, 116, 125],
+  [201, 204, 209, 216, 225]
+]
+## tabular predictor
+eval_metric: f1_macro

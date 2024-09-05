@@ -1,0 +1,7 @@
+## randoms
+random_tuning: 6
+random_balance: 28
+## down sampling
+use_balance: true
+## tabular predictor
+eval_metric: f1

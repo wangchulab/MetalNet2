@@ -1,0 +1,23 @@
+# train part
+num_repeats: 3
+## cross validation
+num_folds: 5
+random_valid: [42, 142, 242]
+randoms_tuning: [ # row for repeat, column for fold 
+  [1, 4, 9, 16, 25],
+  [101, 104, 109, 116, 125],
+  [201, 204, 209, 216, 225]
+]
+## down sampling
+use_balance: true
+randoms_balance: [
+  [2, 3, 5, 7, 11],
+  [102, 103, 105, 107, 111],
+  [202, 203, 205, 207, 211],
+]
+## tabular predictor
+eval_metric: f1
+
+# filter part: graph filter
+prob_threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+node_num_threshold: [0, 1, 2, 3, 4, 5]

@@ -1,0 +1,55 @@
+gene	location	function	uniprot
+AOC1	Extracellular space	enzyme	P19801
+AOC2	Cell membrane	enzyme	O75106
+AOC3	Cell membrane	enzyme	Q16853
+CP	Extracellular space	enzyme	Q16850
+DBH	Extracellular space	enzyme	Q6UVY6
+ENOX1	Cell membrane,Extracellular space	enzyme	Q8TC92
+ENOX2	Cell membrane,Extracellular space	enzyme	Q16206
+HEPH	Cell membrane	enzyme	Q9BQS7
+HEPHL1	Cell membrane	enzyme	Q6MZM0
+LOX	Extracellular space	enzyme	P16050
+LOXL1	Extracellular space	enzyme	Q08397
+LOXL2	Nudeus,Extracellular space	enzyme	Q9Y4K0
+LOXL3	Cytoplasm,Extracellular space	enzyme	P58215
+LOXL4	Extracellular space	enzyme	Q96JB6
+MAP2K1	Nudeus,Cytoskeleton,Cytoplasm	enzyme	Q02750
+MEMO1	Nudeus,Cytoplasm	enzyme	Q9Y316
+MOXD1	Endoplasmatic reticulum	enzyme	Q6UVY6
+MOXD2P	Endoplasmatic reticulum	enzyme	A6NHM9
+MT-CO1	Mitochondrion	enzyme	P00395
+MT-CO2	Mitochondrion	enzyme	P00403
+PAM	Cell membrane,Extracellular space	enzyme	P19021
+PARK7	Nudeus,Cell membrane,Mitochondrion	enzyme	Q99497
+SOD1	Nudeus,Cytoplasm	enzyme	P00441
+SOD3	Extracellular space	enzyme	P08294
+TYR	Intracellular vesicles	enzyme	P40126
+TYRP1	Intracellular vesicles	enzyme	P17643
+ATOX1	Cytoplasm	transporter	O00244
+ATP7A	Cell membrane,Golgi apparatus	transporter	Q04656
+ATP7B	Golgi apparatus	transporter	P35670
+CCS	Cytoplasm	transporter	O14618
+COMMD1	Nudeus,Cytoplasm	transporter	Q8N668
+COX11	Mitochondrion	transporter	Q9Y6N1
+COX17	Mitochondrion	transporter	Q14061
+CUTC	Nudeus,Cytoplasm	transporter	Q9NTM9
+SCO1	Mitochondrion	transporter	O75880
+SCO2	Mitochondrion	transporter	O43819
+SLC31A1	Cell membrane	transporter	O15431
+SLC31A2	Cell membrane	transporter	O15432
+AFP	Extracellular space	unknown	P02771
+ALB	Extracellular space	unknown	P43652
+APP	Cell membrane	unknown	Q92624
+CUTA	Mitochondrion	unknown	O60888
+F5	Extracellular space	unknown	P30939
+GPC1	Cell membrane,Extracellular space	unknown	P35052
+LTF	Nudeus,Extracellular space	unknown	P02788
+MT3	Cytoplasm,Extracellular space	unknown	P25713
+MT4	Extracellular space	unknown	P47944
+PRNP	Cytoplasm,Cell membrane,Nudeus,Golgi apparatus,Mitochondrion	unknown	P04156
+S100A12	Cell membrane,Cytoskeleton,Extracellular space,Cytoplasm	unknown	P80511
+S100A13	Cytoplasm,Extracellular space	unknown	Q99584
+S100A5	Nudeus	unknown	P33763
+S100B	Nudeus	unknown	P04271
+SNCA	Nudeus,Cell membrane,Cytoplasm,Extracellular space	unknown	P37840
+SPARC	Extracellular space	unknown	P09486

@@ -1,0 +1,6 @@
+font.family : "Arial"
+mathtext.default : "regular"
+font.size : 14
+axes.linewidth : 1.25
+xtick.major.width : 1.25
+ytick.major.width : 1.25
