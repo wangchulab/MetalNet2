@@ -1,6 +1,8 @@
 ## Install
 
 The project runs under Ubuntu 18.04.6, Linux-5.3.0-47-generic-x86_64-with-glibc2.27.
+
+### prepare python env
 ```bash
 conda env create -n metalnet -f env.yaml
 ```
@@ -19,6 +21,9 @@ pip install absl-py
 pip install more-itertools
 ```
 
+### download model weights
+1. Download [model_1](https://drive.google.com/file/d/1Qihh1iqIosVKZO0-OH800qj0eXAvCfMu/view?usp=sharing) for metal-binding prediction, [model_2](https://drive.google.com/file/d/1GSOpS0AFeraaRUTWoFQS-hiVNh1p8Azr/view?usp=sharing) for metal-type prediction.
+2. Place model_1 at ./model/train/ and model_2 at ./extra/train/, then unzip them and remove zip files.
 
 ## Usage
 
