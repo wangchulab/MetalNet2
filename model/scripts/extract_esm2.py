@@ -7,14 +7,19 @@ from Bio import SeqIO
 
 
 def define_arguments():
-    flags.DEFINE_string("input_fasta", None, required=True,
-                        help="fasta with seq_id")
-    flags.DEFINE_string("output_dir", None, required=True,
-                        help="output esm2 encodings dir")
-    flags.DEFINE_string("output_esm2", None, required=True,
-                        help="output esm2 files, seq_id to file, tsv")
+    flags.DEFINE_string("input_fasta", None, required=True, help="fasta with seq_id")
     flags.DEFINE_string(
-        "esm2_model", "~/database/model/esm2_t33_650M_UR50D.pt", help="esm2 model path (650M)")
+        "output_dir", None, required=True, help="output esm2 encodings dir"
+    )
+    flags.DEFINE_string(
+        "output_esm2",
+        None,
+        required=True,
+        help="output esm2 files, seq_id to file, tsv",
+    )
+    flags.DEFINE_string(
+        "esm2_model", None, required=True, help="esm2 model path (650M)"
+    )
     flags.DEFINE_integer("cuda", None, help="the gpu device")
     flags.DEFINE_integer("toks_per_batch", default=4096, help="maximum batch size")
 
@@ -27,11 +32,10 @@ def run(
     toks_per_batch: int,
 ) -> int:
 
-    esm2_script_file = osp.join(osp.dirname(
-        osp.abspath(__file__)), "./utils/esm2.py")
+    esm2_script_file = osp.join(osp.dirname(osp.abspath(__file__)), "./utils/esm2.py")
 
     if cuda is not None:
-        cmd = f'''
+        cmd = f"""
 CUDA_VISIBLE_DEVICES={cuda} \
     python {esm2_script_file} \
     {esm2_model} \
@@ -40,9 +44,9 @@ CUDA_VISIBLE_DEVICES={cuda} \
     --toks_per_batch {toks_per_batch} \
     --truncation_seq_length 2700 \
     --include per_tok
-'''
+"""
     else:
-        cmd = f'''
+        cmd = f"""
 python {esm2_script_file} \
     {esm2_model} \
     {fasta_file} \
@@ -51,7 +55,7 @@ python {esm2_script_file} \
     --truncation_seq_length 2700 \
     --include per_tok \
     --nogpu        
-'''
+"""
 
     return os.system(cmd)
 
@@ -74,7 +78,7 @@ def main(argv):
         fasta_file=input_fasta,
         output_dir=output_dir,
         cuda=cuda,
-        toks_per_batch=toks_per_batch
+        toks_per_batch=toks_per_batch,
     )
 
     if result == 0:
@@ -86,13 +90,11 @@ def main(argv):
         for id in seq_ids:
             encoding_file = osp.abspath(osp.join(output_dir, f"{id}.pt"))
             if os.path.exists(encoding_file):
-                esm2_files.append({
-                    "seq_id": id,
-                    "file": encoding_file
-                })
+                esm2_files.append({"seq_id": id, "file": encoding_file})
         logging.info(
-            f"Successfully extracting esm2 encodings ({len(esm2_files)} / {len(seq_ids)})")
-        pd.DataFrame(esm2_files).to_csv(output_esm2, sep="\t", index=None)
+            f"Successfully extracting esm2 encodings ({len(esm2_files)} / {len(seq_ids)})"
+        )
+        pd.DataFrame(esm2_files).to_csv(output_esm2, sep="\t", index=None)  # type: ignore
     else:
         logging.error("Failed extracting esm2.")
     logging.debug("Done.")
