@@ -29,6 +29,16 @@ def get_ndb_seqs(mmcif_dict: MMCIF2Dict) -> dict:  # pdb_strand_id -> ndb_seq
 
 def get_ndb_seqs_can(mmcif_dict: MMCIF2Dict) -> dict:  # pdb_strand_id -> ndb_seq_can
     can_seqs_dict = dict()
+    try:
+        can_seqs_dict = get_ndb_seqs_can_rcsb(mmcif_dict)
+    except KeyError:
+        can_seqs_dict = get_ndb_seqs_can_af(mmcif_dict)
+
+    return can_seqs_dict
+
+
+def get_ndb_seqs_can_rcsb(mmcif_dict: MMCIF2Dict) -> dict:
+    can_seqs_dict = dict()
 
     # https://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/_entity_poly.pdbx_seq_one_letter_code_can.html
     # ndb_seq_can is used for searching msa, predicting structure
@@ -43,6 +53,45 @@ def get_ndb_seqs_can(mmcif_dict: MMCIF2Dict) -> dict:  # pdb_strand_id -> ndb_se
         seq = seqs[index].replace("\n", "")
         for chain in chains:
             can_seqs_dict[chain] = seq
+    return can_seqs_dict
+
+
+def get_ndb_seqs_can_af(mmcif_dict: MMCIF2Dict) -> dict:
+    # NOTE: this is another version of `get_ndb_seqs_can` dealing with cif files that do not have the
+    # key `_entity_poly.pdbx_seq_one_letter_code_can` (af3 generated cif files)
+
+    can_seqs_dict = dict()
+
+    entity_strand_type = zip(
+        mmcif_dict["_entity_poly.entity_id"],
+        mmcif_dict["_entity_poly.pdbx_strand_id"],
+        mmcif_dict["_entity_poly.type"],
+    )
+    entity_id2strand_ids = dict()
+    for e_id, s_id, t in entity_strand_type:
+        if t == "polypeptide(L)":
+            entity_id2strand_ids[e_id] = s_id.split(",")
+
+    entity_mon = zip(
+        mmcif_dict["_entity_poly_seq.entity_id"], mmcif_dict["_entity_poly_seq.mon_id"]
+    )
+    entity_id2mons = dict(
+        zip(
+            entity_id2strand_ids.keys(),
+            [[] for _ in range(len(entity_id2strand_ids.keys()))],
+        )
+    )
+    for e_id, mon in entity_mon:
+        if e_id in entity_id2mons.keys():
+            entity_id2mons[e_id].append(mon)
+
+    entity_id2seq = dict()
+    for k, v in entity_id2mons.items():
+        entity_id2seq[k] = "".join([seq1(i) for i in v])
+
+    for k, v in entity_id2strand_ids.items():
+        for i in v:
+            can_seqs_dict[i] = entity_id2seq[k]
     return can_seqs_dict
 
 
@@ -106,6 +155,15 @@ def align_two_seq(seq1, seq2) -> dict:
 
 
 def get_ndb_seq_can_num(mmcif_dict: MMCIF2Dict) -> dict:
+    result = dict()
+    try:
+        result = get_ndb_seq_can_num_rcsb(mmcif_dict)
+    except KeyError:
+        result = get_ndb_seq_can_num_af(mmcif_dict)
+    return result
+
+
+def get_ndb_seq_can_num_rcsb(mmcif_dict: MMCIF2Dict) -> dict:
 
     # (chain, pdb_seq_num, pdb_ins_code, pdb_mon_id) -> (chain, ndb_seq_num, ndb_seq_can_num), structure_id -> sequence_id
     # a one-to-one dict for residue in pdb structure and residue in ndb seq and ndb seq can
@@ -173,6 +231,22 @@ def get_ndb_seq_can_num(mmcif_dict: MMCIF2Dict) -> dict:
                     ndb_seq_num,
                     ndb_seq_can_num,
                 )
+    return ndb_seq_can_num_dict
+
+
+def get_ndb_seq_can_num_af(mmcif_dict: MMCIF2Dict) -> dict:
+    ndb_seqs_can = get_ndb_seqs_can_af(mmcif_dict)
+
+    ndb_seq_can_num_dict = dict()
+    for chain, seq in ndb_seqs_can.items():
+        for idx, aa in enumerate(seq):
+            # assume that there is no ins code
+            seq_num = idx + 1
+            ndb_seq_can_num_dict[(chain, seq_num, " ", str.upper(seq3(aa)))] = (
+                chain,
+                seq_num,
+                seq_num,
+            )
     return ndb_seq_can_num_dict
 
 

@@ -30,6 +30,11 @@ def define_arguments():
         help="threshold distance for metal-resi interactioin",
     )
     flags.DEFINE_integer(
+        "chain_length_threshold",
+        20,
+        help="chain length for seq that has the same chain id with metal; -1 for unset",
+    )
+    flags.DEFINE_integer(
         "interacted_num_resi", 3, help="threshold num for coordinate residues"
     )
     flags.DEFINE_bool(
@@ -133,9 +138,10 @@ def select_metal_binding_sites(
 
         # check the length of protein chain whose id is the same as chain_id of metal residue (may raise error if there's no such chain)
         # falied cases: ('2jf9', 'R'), ('2zvl', 'Z'), ('6yo5', 'GGG'), ('7ako', 'C')
-        ndb_seq_can = ndb_seqs_can[mr.get_full_id()[2]]
-        if len(ndb_seq_can) < chain_length_threshold:
-            continue
+        if chain_length_threshold >= 0:
+            ndb_seq_can = ndb_seqs_can[mr.get_full_id()[2]]
+            if len(ndb_seq_can) < chain_length_threshold:
+                continue
 
         # one metal residue may have multiple metal ions
         # so we find all metal coordinate residues to these ions
@@ -264,6 +270,7 @@ def main(argv):
     output = FLAGS.output
     interacted_distance = FLAGS.interacted_distance
     interacted_num_resi = FLAGS.interacted_num_resi
+    chain_length_threshold = FLAGS.chain_length_threshold
     include_common_metal_only = FLAGS.include_common_metal_only
     include_metal_compound = FLAGS.include_metal_compound
     include_main_chain = FLAGS.include_main_chain
@@ -273,6 +280,7 @@ def main(argv):
     logging.info("Start selecting metal binding sites.")
     logging.info(f"Using params interacted_distance: {interacted_distance}")
     logging.info(f"Using params interacted_num_resi: {interacted_num_resi}")
+    logging.info(f"Using params chain_length_threshold: {chain_length_threshold}")
     logging.info(f"Using params include_common_metal_only: {include_common_metal_only}")
     logging.info(f"Using params include_metal_compound: {include_metal_compound}")
     logging.info(f"Using params include_main_chain: {include_main_chain}")
@@ -293,6 +301,7 @@ def main(argv):
             kwds={
                 "interacted_distance": interacted_distance,
                 "interacted_num_resi": interacted_num_resi,
+                "chain_length_threshold": chain_length_threshold,
                 "include_common_metal_only": include_common_metal_only,
                 "include_metal_compound": include_metal_compound,
                 "include_main_chain": include_main_chain,
